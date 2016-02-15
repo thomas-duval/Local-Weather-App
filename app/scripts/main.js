@@ -12,6 +12,8 @@ if (navigator.geolocation) {
             $("#city").html(json.name);
             $("#description").html(json.weather[0].description);
             $("#wind").html(json.wind.speed);
+            var icon = "http://openweathermap.org/img/w/" + json.weather[0].icon + ".png";
+            $("#icon").attr("src", icon)
         });
     });
 
