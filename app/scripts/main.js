@@ -1,3 +1,4 @@
+/* global $ */
 if (navigator.geolocation) {
     var lat = 35;
     var lon = 139;
@@ -7,7 +8,6 @@ if (navigator.geolocation) {
         var owpApi = 'http://api.openweathermap.org/data/2.5/weather?lat=' + lat + '&lon=' + lon + '&units=metric&appid=d0256561cef041c12aa806862c96034c';
         $("#description").html(owpApi);
         $.getJSON(owpApi, function (json) {
-            $("#json").html(JSON.stringify(json));
             $("#temperature").html(json.main.temp);
             $("#city").html(json.name);
             $("#description").html(json.weather[0].description);
@@ -16,7 +16,5 @@ if (navigator.geolocation) {
             $("#icon").attr("src", icon)
         });
     });
-
-
 
 }
