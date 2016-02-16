@@ -28,19 +28,27 @@
     <![endif]-->
 
     <div class="container">
-        <div class="header">
-            <h3 class="text-muted">Local Weather App</h3>
-        </div>
         <div class="container">
-            <div class="container row">
+            <div class="header">
+                <h3 class="text-muted">Local Weather App</h3>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="container-fluid">
                 <div class="col-xs-6 icon"><img id="icon" src="" alt=""></div>
                 <div class="col-xs-6 temperature">
                     <h4><span id="temperature"></span><span id="format"> °C</span></h4></div>
             </div>
-            <div class="container row">
-                <div class="col-xs-4" id="city"></div>
-                <div class="col-xs-4" id="description"></div>
-                <div class="col-xs-4" id="wind"></div>
+            <div class="container-fluid">
+                <div class="col-xs-4 thumbnail" id="city"></div>
+                <div class="col-xs-4 thumbnail" id="description"></div>
+                <div class="col-xs-4 thumbnail" id="wind"></div>
+            </div>
+            <br>
+            <div class="container-fluid">
+                <button class="col-xs-6 btn btn-success" id="getWeather">Get Weather</button>
+                <button class="col-xs-6 btn btn-info" id="getWeather">Imperial unit</button>
             </div>
         </div>
     </div>
