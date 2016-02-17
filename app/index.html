@@ -38,17 +38,20 @@
             <div class="container-fluid">
                 <div class="col-xs-6 icon"><img id="icon" src="" alt=""></div>
                 <div class="col-xs-6 temperature">
-                    <h4><span id="temperature"></span><span id="format"> °C</span></h4></div>
+                    <h4><span id="temperature">Temperature in</span><span id="temperatureUnit"> °C</span></h4></div>
             </div>
             <div class="container-fluid">
-                <div class="col-xs-4 thumbnail" id="city"></div>
-                <div class="col-xs-4 thumbnail" id="description"></div>
-                <div class="col-xs-4 thumbnail" id="wind"></div>
+                <div class="col-xs-4 thumbnail" id="city">City</div>
+                <div class="col-xs-4 thumbnail" id="description">Description</div>
+                <div class="col-xs-4 thumbnail">
+                    <span id="wind">Wind speed in</span><span id="windUnit"> meter/sec</span>
+                </div>
             </div>
             <br>
             <div class="container-fluid">
                 <button class="col-xs-6 btn btn-success" id="getWeather">Get Weather</button>
-                <button class="col-xs-6 btn btn-info" id="getWeather">Imperial unit</button>
+                <button class="col-xs-3 btn btn-info" id="fUnit">Imperial Unit</button>
+                <button class="col-xs-3 btn btn-info" id="cUnit">Metric Unit</button>
             </div>
         </div>
     </div>

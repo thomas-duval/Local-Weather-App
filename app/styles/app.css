@@ -31,3 +31,7 @@ h4 {
     max-width: 30%;
     margin: auto 10%;
 }
+.col-xs-3.btn {
+    max-width: 15%;
+    margin: auto 5%;
+}
